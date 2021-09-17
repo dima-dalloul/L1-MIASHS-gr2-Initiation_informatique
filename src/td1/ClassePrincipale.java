@@ -121,25 +121,27 @@ public class ClassePrincipale {
 	 * Le nombre 1101 correspond à l'entier 13.
 	 */
 	public static void exercice4() {
-		int b1,b2,b3,b4; // données
-		int resultat; // résultat
-		
+		// Étape 1 : déclaration des variables
+		int b1, b2, b3, b4, resultat;
 
+		// Étape 2 : récupération des données de la part de l'utilisateur
 		System.out.print("Entrez le premier chiffre binaire (le plus à gauche) : ");
-		Scanner s = new Scanner(System.in);
-		b1 = s.nextInt();
+		Scanner scanner = new Scanner(System.in);
+		b1 = scanner.nextInt();
 		
 		System.out.print("Entrez le deuxième chiffre binaire : ");
-		b2 = s.nextInt();
+		b2 = scanner.nextInt();
 		
 		System.out.print("Entrez le troisième chiffre binaire : ");
-		b3 = s.nextInt();
+		b3 = scanner.nextInt();
 		
 		System.out.print("Entrez le quatrième chiffre binaire : ");
-		b4 = s.nextInt();
-		
+		b4 = scanner.nextInt();
+
+		// Étape 3 : réalisation du calcul demandé dans l'énoncé
 		resultat = b1*8 + b2*4 + b3*2 + b4;
-		
+
+		// Étape 4 : Affichage du résultat pour l'utilisateur
 		System.out.println("Le nombre " + b1 + b2 + b3 + b4 + " correspond à l'entier " + resultat + ".");
 	}
 	
@@ -150,18 +152,21 @@ public class ClassePrincipale {
 	 * Les chiffres sont 8, 4, 0 et 9.
 	 */
 	public static void exercice5() {
-		int entier; // données
-		int c1,c2,c3,c4; // résultat
-		
+		// Étape 1 : déclaration des variables
+		int entierUtilisateur, chiffre1, chiffre2, chiffre3, chiffre4;
+
+		// Étape 2 : récupération des données de la part de l'utilisateur
 		System.out.print("Entrez un entier : ");
 		Scanner s = new Scanner(System.in);
-		entier = s.nextInt();
-		
-		c1 = entier/1000;
-		c2 = (entier/100) %10;
-		c3 = (entier/10) %10;
-		c4 = entier % 10;
-		
-		System.out.println("Les chiffres sont "+c1+", "+c2+", "+c3+", "+c4+".");
+		entierUtilisateur = s.nextInt();
+
+		// Étape 3 : réalisation du calcul demandé dans l'énoncé
+		chiffre1 = entierUtilisateur/1000;
+		chiffre2 = (entierUtilisateur/100) %10;
+		chiffre3 = (entierUtilisateur/10) %10;
+		chiffre4 = entierUtilisateur % 10;
+
+		// Étape 4 : Affichage du résultat pour l'utilisateur
+		System.out.println("Les chiffres sont " + chiffre1 + ", " + chiffre2 + ", " + chiffre3 + ", " + chiffre4 + ".");
 	}
 }
